@@ -36,13 +36,13 @@ export default {
   computed: {
     pickerOptions () {
       const options = {
-        height: 150,
+        height: 210,
         unitRatio: Math.PI / 8,
         loop: false,
         width: 80,
         style: {}
       }
-      
+
       if (this.options) {
         Object.keys(this.options).forEach(k => {
           switch (k) {
@@ -236,13 +236,13 @@ export default {
 <style lang="stylus" scoped>
 .roller-picker
   position relative
-  font-size 18px
+  font-size 21px
   text-align center
 .roller-picker-item
   position absolute
-  height 30px
+  height 42px
   line-height @height
-  top calc(50% - 15px)
+  top calc(50% - 21px)
   width 100%
   white-space nowrap
   overflow hidden

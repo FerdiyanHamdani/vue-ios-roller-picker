@@ -45,16 +45,16 @@ export default {
     text-align center
     perspective 700px
     position relative
-    padding 15px 0
+    padding 0
     z-index 1
   .roller-picker-box-select
     border-top 1px solid rgba(255,255,255,0.1)
     border-bottom 1px solid rgba(255,255,255,0.1)
     box-sizing border-box
-    height 32px
+    height 42px
     position absolute
     width 100%
-    top calc(50% - 16px)
+    top calc(50% - 21px)
     pointer-events none
     z-index 2
 .roller-picker-box-layer-top,
@@ -65,7 +65,7 @@ export default {
   background rgba(0,0,0,0.2)
   z-index 1
   pointer-events none
-  height calc(50% - 15px)
+  height calc(50% - 21px)
 .roller-picker-box-layer-top
   top 0
 .roller-picker-box-layer-bottom
