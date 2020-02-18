@@ -48,8 +48,8 @@ export default {
     padding 0
     z-index 1
   .roller-picker-box-select
-    border-top 1px solid rgba(255,255,255,0.1)
-    border-bottom 1px solid rgba(255,255,255,0.1)
+    border-top 1px solid #707070
+    border-bottom 1px solid #707070
     box-sizing border-box
     height 42px
     position absolute
@@ -62,7 +62,7 @@ export default {
   position absolute
   width 100%
   left 0
-  background rgba(0,0,0,0.2)
+  background transparent
   z-index 1
   pointer-events none
   height calc(50% - 21px)

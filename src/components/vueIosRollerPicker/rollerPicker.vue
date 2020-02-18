@@ -242,7 +242,8 @@ export default {
   position absolute
   height 42px
   line-height @height
-  top calc(50% - 21px)
+  font-weight 700
+  top calc(50% - 25px)
   width 100%
   white-space nowrap
   overflow hidden
