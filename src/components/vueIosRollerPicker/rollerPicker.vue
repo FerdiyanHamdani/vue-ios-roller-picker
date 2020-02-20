@@ -238,6 +238,7 @@ export default {
   position relative
   font-size 21px
   text-align center
+  width 100% !important
 .roller-picker-item
   position absolute
   height 42px
