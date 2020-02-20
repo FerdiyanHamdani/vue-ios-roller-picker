@@ -122,7 +122,9 @@ export default {
         ani.stop(this.aniId)
         this.aniId = null
       }
-      e.preventDefault()
+      if(e.cancelable){
+        e.preventDefault()
+      }
     },
     touchmove (e) {
       const y = e.touches[0].clientY
@@ -133,7 +135,9 @@ export default {
         this.touchstartY = y
       }
       this.recordScroll(y)
-      e.preventDefault()
+      if(e.cancelable){
+        e.preventDefault()
+      }
     },
     touchend (e) {
       if (this.aniId) {
@@ -179,7 +183,9 @@ export default {
           this.$emit('change', selectIndex)
         }
       }, null, 'quadOut', time)
-      e.preventDefault()
+      if(e.cancelable){
+        e.preventDefault()
+      }
     },
     setScrollHeight (val) {
       if (this.pickerOptions.loop) {
