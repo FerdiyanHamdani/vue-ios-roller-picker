@@ -1,6 +1,6 @@
 <template>
   <div class="roller-picker" :style="pickerStyle" @touchstart="touchstart" @touchmove="touchmove" @touchend="touchend" @touchcancel="touchend">
-    <div class="roller-picker-item" v-for="(item,index) in data" :key="index" :style="crtListStyle[index]">
+    <div class="roller-picker-item" v-for="(item,index) in data" :key="index" :style="crtListStyle[index]" :class = "{'roller-picker-red':item.red}">
       {{item.text}}
     </div>
   </div>
@@ -255,4 +255,6 @@ export default {
   white-space nowrap
   overflow hidden
   text-overflow ellipsis
+.roller-picker-red
+  color:#CE0000
 </style>
